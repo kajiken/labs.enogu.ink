@@ -1,0 +1,9 @@
+{
+  "name": "labs.enogu.ink",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/kajiken/labs.enogu.ink",
+  "author": "kajiken <knskjwr@gmail.com>",
+  "license": "MIT",
+  "private": true
+}
