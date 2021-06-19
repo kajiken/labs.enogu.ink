@@ -1,0 +1,45 @@
+.navigation {
+  margin: auto 16px;
+  display: flex;
+  justify-content: space-between;
+  height: 56px;
+
+  @media screen and (max-width: 600px) {
+    margin: auto 8px;
+  }
+}
+
+.left {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.anchor {
+  color: #0366d6;
+}
+
+.anchor:hover {
+  text-decoration: underline;
+}
+
+.right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon {
+  padding: 0 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

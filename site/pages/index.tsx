@@ -2,6 +2,7 @@ import Head from "next/head";
 import Link from "next/link";
 import AvatarImage from "../components/AvatarImage";
 import GitHubIcon from "../components/GitHubIcon";
+import Header from "../components/Header";
 import TwitterIcon from "../components/TwitterIcon";
 import styles from "../styles/Home.module.css";
 
@@ -12,21 +13,22 @@ export default function Home() {
         <title>enogu.ink | HOME</title>
       </Head>
 
-      <header className={styles.header}>
-        <div className={styles.colorBoxListWrapper}>
-          <div className={styles.colorboxBlue}></div>
-          <div className={styles.colorboxRed}></div>
-          <div className={styles.colorboxYellow}></div>
-          <div className={styles.colorboxLightBlue}></div>
-          <div className={styles.colorboxGreen}></div>
-        </div>
-        <div className={styles.colorBoxBorderWrapper}>
-          <div className={styles.colorboxCyan}></div>
-        </div>
-      </header>
+      <Header />
 
       <main className={styles.main}>
-        <h1>
+        <h1 className={styles.h1}>
+          <Link href="/me">
+            <a className={styles.anchor}>
+              <AvatarImage />
+            </a>
+          </Link>
+        </h1>
+        <section className={styles.section}>
+          <a href="https://t.enogu.ink" className={styles.til}>
+            TIL
+          </a>
+        </section>
+        <section className={styles.section}>
           <ul className={styles.ul}>
             <li>
               <a
@@ -35,7 +37,7 @@ export default function Home() {
                 rel="noopener noreferrer"
                 className={styles.anchor}
               >
-                <TwitterIcon />
+                <TwitterIcon size={64} />
               </a>
             </li>
             <li>
@@ -45,18 +47,12 @@ export default function Home() {
                 rel="noopener noreferrer"
                 className={styles.anchor}
               >
-                <GitHubIcon />
+                <GitHubIcon size={64} />
               </a>
             </li>
-            <li>
-              <Link href="/me">
-                <a href="me" className={styles.anchor}>
-                  <AvatarImage />
-                </a>
-              </Link>
-            </li>
+            <li></li>
           </ul>
-        </h1>
+        </section>
       </main>
     </div>
   );

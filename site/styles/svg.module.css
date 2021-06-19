@@ -1,8 +1,0 @@
-.svg {
-  height: 64px;
-}
-
-.svgTwitter {
-  composes: svg;
-  fill: #1da1f2;
-}

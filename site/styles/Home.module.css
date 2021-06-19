@@ -7,71 +7,27 @@
   height: 100vh;
 }
 
-.header {
-  width: 100%;
-}
-
-.colorBoxListWrapper {
-  display: flex;
-  width: 100%;
-  height: 100px;
-}
-
-.colorBoxBorderWrapper {
-  display: flex;
-  width: 100%;
-  height: 50px;
-}
-
-.colorbox {
-  width: 100%;
-}
-
-.colorboxBlue {
-  composes: colorbox;
-  background-color: #32468d;
-}
-
-.colorboxRed {
-  composes: colorbox;
-  background-color: #ff686d;
-}
-
-.colorboxRed {
-  composes: colorbox;
-  background-color: #ff686d;
-}
-
-.colorboxYellow {
-  composes: colorbox;
-  background-color: #ffc36d;
-}
-
-.colorboxLightBlue {
-  composes: colorbox;
-  background-color: #198cca;
-}
-
-.colorboxGreen {
-  composes: colorbox;
-  background-color: #52acad;
-}
-
-.colorboxCyan {
-  composes: colorbox;
-  background-color: #23b7fe;
-}
-
 .main {
   padding: 5rem 0;
   flex: 1;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
 .h1 {
   font-size: 16px;
+  margin: 16px 0;
+}
+
+.section {
+  margin: 16px 0;
+}
+
+.til {
+  font-size: 2em;
+  text-decoration: underline;
 }
 
 .ul {
